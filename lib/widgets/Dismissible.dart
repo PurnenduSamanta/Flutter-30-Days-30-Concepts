@@ -22,7 +22,7 @@ class DismissibleWidget extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dismissible'),
+        title: const Text('Dismissible'),
       ),
       body: ListView.builder(
         itemCount: fruits.length,

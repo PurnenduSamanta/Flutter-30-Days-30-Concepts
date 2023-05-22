@@ -12,7 +12,7 @@ class TabBarWidget extends StatelessWidget {
         initialIndex: 1,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('TabBar'),
+            title: const Text('TabBar'),
             backgroundColor: Colors.blue,
             bottom: const TabBar(
               tabs: [

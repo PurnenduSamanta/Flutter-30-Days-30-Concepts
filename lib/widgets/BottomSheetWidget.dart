@@ -9,7 +9,7 @@ class BottomSheetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bottom Sheet'),
+        title: const Text('Bottom Sheet'),
       ),
       body: Center(
         child: ElevatedButton(onPressed: () {
@@ -19,7 +19,7 @@ class BottomSheetWidget extends StatelessWidget {
                return
                    Column(
                      mainAxisSize: MainAxisSize.min,
-                     children: [
+                     children: const [
                        ListTile(
                          title: Text('RRR'),
                          subtitle: Text('S.S.Rajamouli'),
@@ -33,7 +33,7 @@ class BottomSheetWidget extends StatelessWidget {
               });
 
         },
-        child: Text('Show Bottom Sheet'),
+        child: const Text('Show Bottom Sheet'),
 
         ),
       ),

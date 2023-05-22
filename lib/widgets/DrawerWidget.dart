@@ -26,7 +26,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                           radius: 30,
                           backgroundImage: NetworkImage('https://scontent.fccu13-1.fna.fbcdn.net/v/t1.6435-1/p240x240/126059373_3112714752289077_2881692481016996719_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=0CEOxBQ4AEQAX_znNXt&_nc_ht=scontent.fccu13-1.fna&oh=00_AT8DROL4cgati8qgjogWSxcr-oU35LCxAqHetTpeBXcs_Q&oe=61FF8D93'),
                         ),
-                        SizedBox(width: 5),
+                        const SizedBox(width: 5),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,

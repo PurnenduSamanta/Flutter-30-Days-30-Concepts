@@ -9,7 +9,7 @@ class AnimatedTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Animated Text Widget'),
+        title: const Text('Animated Text Widget'),
       ),
       body: AnimatedTextKit(animatedTexts: [
         TypewriterAnimatedText(

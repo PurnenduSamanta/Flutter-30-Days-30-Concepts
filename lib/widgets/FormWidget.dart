@@ -30,23 +30,24 @@ class FormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Form'),
+        title: const Text('Form'),
       ),
       body: Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           child: Form(
             key: _formKey,
             child: Column(
               children: [
                 TextFormField(
                   decoration:
-                      InputDecoration(hintText: 'Enter your first name'),
-                  key: ValueKey('First Name'),
+                      const InputDecoration(hintText: 'Enter your first name'),
+                  key: const ValueKey('First Name'),
                   validator: (value) {
-                    if (value.toString().isEmpty)
+                    if (value.toString().isEmpty) {
                       return "First Name should not be empty";
-                    else
+                    } else {
                       return null;
+                    }
                   },
                   onSaved: (newValue) {
                     firstName = newValue!.toString();
@@ -54,13 +55,14 @@ class FormWidget extends StatelessWidget {
                 ),
                 TextFormField(
                   decoration:
-                      InputDecoration(hintText: 'Enter your last name'),
-                  key: ValueKey('Last Name'),
+                      const InputDecoration(hintText: 'Enter your last name'),
+                  key: const ValueKey('Last Name'),
                   validator: (value) {
-                    if (value.toString().isEmpty)
+                    if (value.toString().isEmpty) {
                       return "last Name should not be empty";
-                    else
+                    } else {
                       return null;
+                    }
                   },
                   onSaved: (newValue) {
                     lastName = newValue!.toString();
@@ -68,13 +70,14 @@ class FormWidget extends StatelessWidget {
                 ),
                 TextFormField(
                   decoration:
-                      InputDecoration(hintText: 'Enter your Email address'),
-                  key: ValueKey('Email'),
+                      const InputDecoration(hintText: 'Enter your Email address'),
+                  key: const ValueKey('Email'),
                   validator: (value) {
-                    if (!value.toString().contains('@'))
+                    if (!value.toString().contains('@')) {
                       return "Not valid email address";
-                    else
+                    } else {
                       return null;
+                    }
                   },
                   onSaved: (newValue) {
                     email = newValue!.toString();
@@ -83,13 +86,14 @@ class FormWidget extends StatelessWidget {
                 TextFormField(
                   obscureText: true,
                   decoration:
-                      InputDecoration(hintText: 'Enter your password'),
-                  key: ValueKey('Password'),
+                      const InputDecoration(hintText: 'Enter your password'),
+                  key: const ValueKey('Password'),
                   validator: (value) {
-                    if (value.toString().length<=7)
+                    if (value.toString().length<=7) {
                       return "password must be 8 character";
-                    else
+                    } else {
                       return null;
+                    }
                   },
                   onSaved: (newValue) {
                     password = newValue!.toString();
@@ -97,7 +101,7 @@ class FormWidget extends StatelessWidget {
                 ),
                 TextButton(onPressed:() {
                   submit();
-                }, child: Text('Submit'))
+                }, child: const Text('Submit'))
               ],
             ),
           )),

@@ -7,14 +7,14 @@ class StackWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Stack'),
+          title: const Text('Stack'),
         ),
         body: Stack(
           children: [
             Positioned(child: Container(
               height: 300,
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/nature.jpg'),
                   fit: BoxFit.cover

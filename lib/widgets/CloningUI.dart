@@ -29,7 +29,7 @@ class _CloningUIState extends State<CloningUI> {
                           fit: BoxFit.cover,
                           image: AssetImage('assets/nature.jpg'))),
                   child: Container(
-                    padding: EdgeInsets.fromLTRB(20, 50, 20, 0),
+                    padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,7 +62,7 @@ class _CloningUIState extends State<CloningUI> {
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     'This is a random description of text',
                     style: TextStyle(
@@ -70,7 +70,7 @@ class _CloningUIState extends State<CloningUI> {
                         fontSize: 15,
                         fontWeight: FontWeight.normal),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -81,8 +81,8 @@ class _CloningUIState extends State<CloningUI> {
                     ],
                   ),
                   Divider(color: Colors.grey.shade500),
-                  SizedBox(height: 10),
-                  Text(
+                  const SizedBox(height: 10),
+                  const Text(
                       'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
                       style: TextStyle(fontSize: 10, color: Colors.black))
                 ],
@@ -99,9 +99,9 @@ class _CloningUIState extends State<CloningUI> {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold,color: Colors.black),
         ),
-        SizedBox(width: 5),
+        const SizedBox(width: 5),
         Icon(
           icon,
           color: Colors.black,
