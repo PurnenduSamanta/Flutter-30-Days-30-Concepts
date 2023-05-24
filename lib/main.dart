@@ -3,6 +3,7 @@ import 'package:sizedbox_container/widgets/BottomSheetWidget.dart';
 import 'package:sizedbox_container/widgets/CloningUI.dart';
 import 'package:sizedbox_container/widgets/Dismissible.dart';
 import 'package:sizedbox_container/widgets/FormWidget.dart';
+import 'package:sizedbox_container/widgets/my_container.dart';
 
 void main() => runApp(const SizedBoxContainer());
 
@@ -16,7 +17,7 @@ class SizedBoxContainer extends StatelessWidget {
       theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: Colors.lightBlueAccent),
-           home:  const CloningUI(),
+           home:  const MyContainer(),
     );
   }
 }
